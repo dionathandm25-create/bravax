@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BRVX Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <h1>BravaX</h1>
+      <p class="subtitle">Painel local da blockchain {{ coin_symbol }}</p>
+    </header>
+
+    <section class="stats">
+      <div class="card">
+        <h2>Altura da cadeia</h2>
+        <p>{{ chain_height }} blocos</p>
+      </div>
+      <div class="card">
+        <h2>Mempool</h2>
+        <p>{{ mempool_size }} transações</p>
+      </div>
+      <div class="card">
+        <h2>Total minerado</h2>
+        <p>{{ total_mined }} {{ coin_symbol }}</p>
+      </div>
+    </section>
+
+    <section class="balances">
+      <h2>Carteiras</h2>
+      <div class="grid">
+        {% for name, wallet in balances.items() %}
+        <div class="card">
+          <h3>{{ name }}</h3>
+          <p><strong>Saldo:</strong> {{ wallet.balance }} {{ coin_symbol }}</p>
+          <p class="address">{{ wallet.address }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="blocks">
+      <h2>Blocos recentes</h2>
+      <div class="grid">
+        {% for block in blocks %}
+        <div class="card block-card">
+          <h3>Bloco #{{ block.index }}</h3>
+          <p><strong>Hash:</strong></p>
+          <p class="hash">{{ block.hash }}</p>
+          <p><strong>Hash anterior:</strong></p>
+          <p class="hash">{{ block.previous_hash }}</p>
+          <p><strong>Dificuldade:</strong> {{ block.difficulty }}</p>
+          <p><strong>Transações:</strong> {{ block.transactions_count }}</p>
+          <p><strong>Timestamp:</strong> {{ block.timestamp }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+  </div>
+</body>
+</html>

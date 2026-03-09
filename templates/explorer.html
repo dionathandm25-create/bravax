@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ coin_name }} Explorer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='explorer.css') }}">
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <h1>{{ coin_name }}</h1>
+      <p class="subtitle">Explorer oficial da blockchain {{ coin_symbol }}</p>
+    </header>
+
+    <section class="stats">
+      <div class="card"><h2>Altura</h2><p>{{ chain_height }} blocos</p></div>
+      <div class="card"><h2>Mempool</h2><p>{{ mempool_size }} transações</p></div>
+      <div class="card"><h2>Emitido</h2><p>{{ total_emitted }} {{ coin_symbol }}</p></div>
+      <div class="card"><h2>Restante</h2><p>{{ total_remaining }} {{ coin_symbol }}</p></div>
+    </section>
+
+    <section class="tokenomics">
+      <h2>Tokenomics</h2>
+      <div class="grid">
+        <div class="card"><h3>Supply total</h3><p>{{ total_supply }} {{ coin_symbol }}</p></div>
+        <div class="card"><h3>Premine total</h3><p>{{ premine_total }} {{ coin_symbol }}</p></div>
+        <div class="card"><h3>Founder</h3><p>{{ premine_founder }} {{ coin_symbol }}</p></div>
+        <div class="card"><h3>Desenvolvimento</h3><p>{{ premine_dev }} {{ coin_symbol }}</p></div>
+        <div class="card"><h3>Marketing</h3><p>{{ premine_marketing }} {{ coin_symbol }}</p></div>
+        <div class="card"><h3>Mineração</h3><p>{{ mining_allocation }} {{ coin_symbol }}</p></div>
+        <div class="card"><h3>Recompensa atual</h3><p>{{ current_reward }} {{ coin_symbol }}</p></div>
+        <div class="card"><h3>Recompensa inicial</h3><p>{{ initial_reward }} {{ coin_symbol }}</p></div>
+        <div class="card"><h3>Halving</h3><p>a cada {{ halving_interval }} blocos</p></div>
+        <div class="card"><h3>Tempo alvo</h3><p>{{ target_block_time }} s</p></div>
+      </div>
+    </section>
+
+    <section class="wallets">
+      <h2>Carteiras oficiais</h2>
+      <div class="grid">
+        {% for name, wallet in balances.items() %}
+        <div class="card">
+          <h3>{{ name }}</h3>
+          <p><strong>Saldo:</strong> {{ wallet.balance }} {{ coin_symbol }}</p>
+          <p class="mono">{{ wallet.address }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="network">
+      <h2>Peers da rede</h2>
+      <div class="card">
+        {% if peers %}
+          {% for peer in peers %}
+            <p class="mono">{{ peer }}</p>
+          {% endfor %}
+        {% else %}
+          <p>Nenhum peer conectado.</p>
+        {% endif %}
+      </div>
+    </section>
+
+    <section class="blocks">
+      <h2>Blocos recentes</h2>
+      <div class="grid">
+        {% for block in blocks %}
+        <div class="card block-card">
+          <h3>Bloco #{{ block.index }}</h3>
+          <p><strong>Hash:</strong></p>
+          <p class="mono">{{ block.hash_short }}</p>
+          <p><strong>Anterior:</strong></p>
+          <p class="mono">{{ block.previous_hash_short }}</p>
+          <p><strong>Dificuldade:</strong> {{ block.difficulty }}</p>
+          <p><strong>Transações:</strong> {{ block.transactions_count }}</p>
+          <p><strong>Timestamp:</strong> {{ block.timestamp }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+  </div>
+</body>
+</html>

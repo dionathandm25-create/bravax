@@ -1,0 +1,50 @@
+{
+  "chain": [
+    {
+      "index": 0,
+      "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "transactions": [
+        {
+          "message": "Genesis Block - BRVX Main Chain Start",
+          "type": "genesis"
+        }
+      ],
+      "timestamp": 1773030743,
+      "nonce": 31,
+      "difficulty": 2
+    },
+    {
+      "index": 1,
+      "previous_hash": "002064f4e71c64769bf1786b35a5b5079dfbbf4903e39946b2125151667e3ca3",
+      "transactions": [
+        {
+          "inputs": [],
+          "nonce": "a9e67ace786ab0ab",
+          "outputs": [
+            {
+              "amount": 1000000000000000,
+              "recipient": "BRVX4d21bf672eb94adc8f40a5e9f91e553c"
+            },
+            {
+              "amount": 1500000000000000,
+              "recipient": "BRVXcd187ecac2f59e4355bdc671d0493a03"
+            },
+            {
+              "amount": 1500000000000000,
+              "recipient": "BRVXc9b8021512bdeb849e73d827e74d4874"
+            }
+          ],
+          "timestamp": 1773030766305,
+          "tx_type": "premine"
+        }
+      ],
+      "timestamp": 1773030766,
+      "nonce": 42040,
+      "difficulty": 4
+    }
+  ],
+  "pending_transactions": [],
+  "difficulty": 4,
+  "total_mined": 4000000000000000,
+  "premine_done": true
+}

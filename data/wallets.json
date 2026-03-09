@@ -1,0 +1,17 @@
+{
+  "wallet_a": {
+    "private_key": "a316048ee1e3be123b5340c2829bbb7f7b28e99e5db17a367fef1f56e4062ad7",
+    "public_key": "ce1cb4c78e62662fb47bd8b3ed3e187f1aadfbc735985659b5ac0c9415522a77ed73ccf661d8ec80293a9b64ea393e090d8308f135d683336304250cb63e760c",
+    "address": "BRVX34d67f131c47e11278bf07cc39644da7"
+  },
+  "wallet_b": {
+    "private_key": "b5faf584bbe8ee041d0d099344a3f3f382b6a0991ea41d8d523c2b068b116ca9",
+    "public_key": "c78cc46baa8cfefbddf67fc1810420d8ad69d817450b5969db54ce4526fc432fd8046c61d4c2d7a890f8ceeef2a70d99859aea91d1b492d6794cafed5c927b1c",
+    "address": "BRVX985cfc883a4c2e09547a7fd1349ab320"
+  },
+  "miner_wallet": {
+    "private_key": "016ae661c9fe139f438469348953b22319c4a282a43993ba031d0e0c6c95a671",
+    "public_key": "78aae90dd732ab521ea6e0bb549b4fd54c98361583337a5e90d0be5ff48d025a41f8ffc04cb0242f029369a52d4dfcb1bf9b90ea2b7b37d30dc5aa400105f0bc",
+    "address": "BRVX0b6c93f67f08f3f64ec6c90462b51996"
+  }
+}

@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #050816;
+  color: #ffffff;
+}
+
+.container {
+  width: 92%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 0 40px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 38px;
+  color: #3ea6ff;
+}
+
+.subtitle {
+  margin-top: 8px;
+  color: #b9d8ff;
+}
+
+.stats,
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+.stats {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-bottom: 28px;
+}
+
+.grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card {
+  background: linear-gradient(180deg, #0d1328, #111b38);
+  border: 1px solid #1f4d8f;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 0 16px rgba(20, 90, 180, 0.18);
+}
+
+.card h2,
+.card h3 {
+  margin-top: 0;
+  color: #59b2ff;
+}
+
+.address,
+.hash {
+  word-break: break-word;
+  color: #c8e2ff;
+  font-size: 14px;
+}
+
+.balances,
+.blocks {
+  margin-top: 30px;
+}

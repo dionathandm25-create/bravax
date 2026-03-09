@@ -1,0 +1,259 @@
+{
+  "chain": [
+    {
+      "index": 0,
+      "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "transactions": [
+        {
+          "type": "genesis",
+          "message": "Genesis Block - BRVX Main Chain Start"
+        }
+      ],
+      "timestamp": 1773025302,
+      "nonce": 160,
+      "difficulty": 2
+    },
+    {
+      "index": 1,
+      "previous_hash": "0019b864185aa82a3cfb2e35dc01f2d765c7f912fdfb9cc8ae39b693bc4e453c",
+      "transactions": [
+        {
+          "tx_type": "coinbase",
+          "timestamp": 1773025302528,
+          "nonce": "b6be0c52005c9a6c",
+          "inputs": [],
+          "outputs": [
+            {
+              "recipient": "BRVX0b6c93f67f08f3f64ec6c90462b51996",
+              "amount": 5000000000
+            }
+          ]
+        }
+      ],
+      "timestamp": 1773025302,
+      "nonce": 58976,
+      "difficulty": 4
+    },
+    {
+      "index": 2,
+      "previous_hash": "0000c8e728a43d884b3387a111ec50ebed0eacbbc7f6df3198203a2567f798e8",
+      "transactions": [
+        {
+          "tx_type": "transfer",
+          "timestamp": 1773025304387,
+          "nonce": "0a492a8f6e9c9c3d",
+          "inputs": [
+            {
+              "txid": "40dcc62a543a783b35129e8579f55683035a60326d391309ba575952d23d07fb",
+              "output_index": 0,
+              "signature": "8344da9ae3a34a697de4f0e6df14afe8db548a690d0779da538b5efa8e0e3e84abd8365c7743bfe401c10497751bed833bda3c946cf2eefcf39668ef90f2354d",
+              "public_key": "78aae90dd732ab521ea6e0bb549b4fd54c98361583337a5e90d0be5ff48d025a41f8ffc04cb0242f029369a52d4dfcb1bf9b90ea2b7b37d30dc5aa400105f0bc"
+            }
+          ],
+          "outputs": [
+            {
+              "recipient": "BRVX985cfc883a4c2e09547a7fd1349ab320",
+              "amount": 500000000
+            },
+            {
+              "recipient": "BRVX0b6c93f67f08f3f64ec6c90462b51996",
+              "amount": 4500000000
+            }
+          ]
+        },
+        {
+          "tx_type": "coinbase",
+          "timestamp": 1773025304399,
+          "nonce": "f1d655ff0df05983",
+          "inputs": [],
+          "outputs": [
+            {
+              "recipient": "BRVX0b6c93f67f08f3f64ec6c90462b51996",
+              "amount": 5000000000
+            }
+          ]
+        }
+      ],
+      "timestamp": 1773025304,
+      "nonce": 42061,
+      "difficulty": 4
+    },
+    {
+      "index": 3,
+      "previous_hash": "0000fe2b05c70793932f26421d3c211238184581787da29cdf7fbf1ca2ffeb13",
+      "transactions": [
+        {
+          "tx_type": "coinbase",
+          "timestamp": 1773025462932,
+          "nonce": "325e5585b90a4114",
+          "inputs": [],
+          "outputs": [
+            {
+              "recipient": "BRVX0b6c93f67f08f3f64ec6c90462b51996",
+              "amount": 5000000000
+            }
+          ]
+        }
+      ],
+      "timestamp": 1773025462,
+      "nonce": 1758,
+      "difficulty": 4
+    },
+    {
+      "index": 4,
+      "previous_hash": "00007476c54b18a2bb8250abddc7890e2b69d3fc0c0bccf1fd78cf17b9abd7b8",
+      "transactions": [
+        {
+          "tx_type": "coinbase",
+          "timestamp": 1773025487623,
+          "nonce": "1e659a81bfd773a7",
+          "inputs": [],
+          "outputs": [
+            {
+              "recipient": "BRVX0b6c93f67f08f3f64ec6c90462b51996",
+              "amount": 5000000000
+            }
+          ]
+        }
+      ],
+      "timestamp": 1773025487,
+      "nonce": 76561,
+      "difficulty": 4
+    },
+    {
+      "index": 5,
+      "previous_hash": "000092bd2700adc2089a74732a65d8b144135a7c964899b2077c7910c189fa7f",
+      "transactions": [
+        {
+          "tx_type": "transfer",
+          "timestamp": 1773025773225,
+          "nonce": "a08d086dc2cd561b",
+          "inputs": [
+            {
+              "txid": "a44d90586921124a36ce33fcd0a51ce5e144e3a20288820ffc18d0c70fcebe32",
+              "output_index": 1,
+              "signature": "9834b429b36755fe41322cc3afb3ff429763af4386c34c13a98c901801ee87fe4a07c1ddfe0ee19b0feaecbdc181fdff046a75cfd0e6904b8219d4b17cf46ce1",
+              "public_key": "78aae90dd732ab521ea6e0bb549b4fd54c98361583337a5e90d0be5ff48d025a41f8ffc04cb0242f029369a52d4dfcb1bf9b90ea2b7b37d30dc5aa400105f0bc"
+            }
+          ],
+          "outputs": [
+            {
+              "recipient": "BRVX34d67f131c47e11278bf07cc39644da7",
+              "amount": 1200000000
+            },
+            {
+              "recipient": "BRVX0b6c93f67f08f3f64ec6c90462b51996",
+              "amount": 3300000000
+            }
+          ]
+        },
+        {
+          "tx_type": "coinbase",
+          "timestamp": 1773025773602,
+          "nonce": "9af21090895d2630",
+          "inputs": [],
+          "outputs": [
+            {
+              "recipient": "BRVX0b6c93f67f08f3f64ec6c90462b51996",
+              "amount": 5000000000
+            }
+          ]
+        }
+      ],
+      "timestamp": 1773025773,
+      "nonce": 86630,
+      "difficulty": 4
+    },
+    {
+      "index": 6,
+      "previous_hash": "00002d43063c3e8cffb93e2ad20fe14c128bbf5b96553d1271fe5c64a3751af7",
+      "transactions": [
+        {
+          "tx_type": "transfer",
+          "timestamp": 1773025821995,
+          "nonce": "0562061191f29935",
+          "inputs": [
+            {
+              "txid": "64e37073257aef3823f4328b64c2a474ff513176dbb21696ee9ab190ab68c35c",
+              "output_index": 0,
+              "signature": "04f8792aee0149c6327aaa3b621e6ae9e4392b7c216207d33f9c14258f1243025797ef94d5192cc7dc68f989ec0e48e5d75e3f5cfd89ac5810c384b33201cc82",
+              "public_key": "ce1cb4c78e62662fb47bd8b3ed3e187f1aadfbc735985659b5ac0c9415522a77ed73ccf661d8ec80293a9b64ea393e090d8308f135d683336304250cb63e760c"
+            }
+          ],
+          "outputs": [
+            {
+              "recipient": "BRVX985cfc883a4c2e09547a7fd1349ab320",
+              "amount": 300000000
+            },
+            {
+              "recipient": "BRVX34d67f131c47e11278bf07cc39644da7",
+              "amount": 900000000
+            }
+          ]
+        },
+        {
+          "tx_type": "coinbase",
+          "timestamp": 1773025822362,
+          "nonce": "45316b512422674f",
+          "inputs": [],
+          "outputs": [
+            {
+              "recipient": "BRVX0b6c93f67f08f3f64ec6c90462b51996",
+              "amount": 5000000000
+            }
+          ]
+        }
+      ],
+      "timestamp": 1773025822,
+      "nonce": 42019,
+      "difficulty": 4
+    },
+    {
+      "index": 7,
+      "previous_hash": "0000fc545794218e370f26350192a99ffa48b42547d847f91157636e4431eba2",
+      "transactions": [
+        {
+          "tx_type": "transfer",
+          "timestamp": 1773027385772,
+          "nonce": "0e9a2e8a62b0d455",
+          "inputs": [
+            {
+              "txid": "2f56db5c4650abb50099f1cdcf5f07908dfbd6fe6cc2e77c42cfe50a5ffefa81",
+              "output_index": 0,
+              "signature": "ae790802befcba69e806968c5f80dedcc95f9a870896c3d572e5a8770487f9ed699833db412da068040fce8dbd20bd55b454809c5da08d4304af97cbb532df06",
+              "public_key": "78aae90dd732ab521ea6e0bb549b4fd54c98361583337a5e90d0be5ff48d025a41f8ffc04cb0242f029369a52d4dfcb1bf9b90ea2b7b37d30dc5aa400105f0bc"
+            }
+          ],
+          "outputs": [
+            {
+              "recipient": "BRVX34d67f131c47e11278bf07cc39644da7",
+              "amount": 100000000
+            },
+            {
+              "recipient": "BRVX0b6c93f67f08f3f64ec6c90462b51996",
+              "amount": 4900000000
+            }
+          ]
+        },
+        {
+          "tx_type": "coinbase",
+          "timestamp": 1773027407156,
+          "nonce": "4a69c5ac2dde36c2",
+          "inputs": [],
+          "outputs": [
+            {
+              "recipient": "BRVX0b6c93f67f08f3f64ec6c90462b51996",
+              "amount": 5000000000
+            }
+          ]
+        }
+      ],
+      "timestamp": 1773027407,
+      "nonce": 50493,
+      "difficulty": 4
+    }
+  ],
+  "pending_transactions": [],
+  "difficulty": 4,
+  "total_mined": 35000000000
+}
